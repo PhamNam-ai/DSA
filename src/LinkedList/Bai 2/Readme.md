@@ -1,0 +1,1 @@
+(Chèn một phần từ vào đuôi danh sách liên kết)

@@ -1,0 +1,1 @@
+Tóm tắt: Cho một dãy các số chưa được sắp. Giữa hai số bất kỳ trong dãy, chúng ta có giá trị tuyệt đối của hiệu giữa chúng. Hãy tìm và in ra những cặp số có giá trị tuyệt đối chênh lệch trên là nhỏ nhất. Nếu có nhiều cặp như vậy thì in hết ra.

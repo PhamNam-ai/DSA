@@ -1,0 +1,1 @@
+(Đảo ngược một danh sách liên kết)

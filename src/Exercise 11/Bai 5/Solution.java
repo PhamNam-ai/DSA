@@ -18,24 +18,25 @@ class Result {
      */
 
     public static List<Integer> missingNumbers(List<Integer> arr, List<Integer> brr) {
-        Map<Integer, Integer> freq = new HashMap<>();
-        for(int num : freq){
-            freq.put(num, freq.getOrDefault(num, 0) + 1);
-        }
-        for(int num : arr){
-            freq.put(num, freq.get(num) - 1);
-        }
-        List<Integer> result = new ArrayList<>();
-        for(int key : freq.keySet()){
-            if(freq.get(key) > 0){
-                result.add(key);
-            }
-        }
-        Collection.sort(result);
-        return result;
-        // Write your code here
+        Map<Integer, Integer> freqA = new HashMap<>();
+        Map<Integer, Integer> freqB = new HashMap<>();
 
+        for (int x : arr)
+            freqA.put(x, freqA.getOrDefault(x, 0) + 1);
+
+        for (int x : brr)
+            freqB.put(x, freqB.getOrDefault(x, 0) + 1);
+
+        List<Integer> missing = new ArrayList<>();
+        for (int x : freqB.keySet()) {
+            if (freqB.get(x) > freqA.getOrDefault(x, 0))
+                missing.add(x);
+        }
+
+        Collections.sort(missing);
+        return missing;
     }
+
 
 }
 

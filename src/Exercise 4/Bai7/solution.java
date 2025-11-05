@@ -7,7 +7,7 @@ public class ThreeSumQuadratic {
     }
 
     public static void threeSum(int[] nums) {
-        Arrays.sort(nums);  // Bước 1: sắp xếp mảng
+        Arrays.sort(nums);  // Bước 1: sắp xếp mảng : O(N log N)
         int n = nums.length;
 
         System.out.println("Các bộ ba có tổng = 0:");
@@ -39,3 +39,5 @@ public class ThreeSumQuadratic {
         }
     }
 }
+Vòng for (i) có N lần, mỗi lần inner while(left<right) di chuyển left và right tối đa tổng cộng O(N) (amortized).
+        => O(N²) tổng thể.

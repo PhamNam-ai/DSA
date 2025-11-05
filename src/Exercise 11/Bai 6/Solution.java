@@ -75,3 +75,6 @@ public class Solution {
         bufferedWriter.close();
     }
 }
+
+
+Ex : a = [5, 15, 1, 3]

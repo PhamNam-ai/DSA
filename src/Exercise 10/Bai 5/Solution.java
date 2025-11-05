@@ -47,20 +47,14 @@ public class Tree {
     void inOrder (Node root, int levels) {
 
         if(root != null) {
-            // If there are still unfilled levels, fill left subtree:
             if (levels > 0) {
-                // Create a new left child node:
                 root.left = new Node();
                 inOrder(root.left, levels - 1);
             }
 
-            // Set node data:
             root.data = values.elementAt(count);
             count++;
-
-            // If there are still unfilled levels, fill right subtree:
             if (levels > 0) {
-                // Create a new right child node:
                 root.right = new Node();
                 inOrder(root.right, levels - 1);
             }

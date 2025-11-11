@@ -14,3 +14,30 @@ trong đó viết sẵn việc nhập dữ liệu, khai báo và khởi tạo đ
 
 Sinh viên cần viết nốt phần hàm static int[] findShortestReach(ArrayList> graph, int start) tìm đường đi ngắn nhất từ đỉnh start tới các đỉnh khác, lưu kết quả vào mảng costs[] và trả về.
 
+
+Độ phức tạp
+Thời gian (Time Complexity)
+
+Xây dựng danh sách kề: O(n + m)
+
+Tạo n+1 list: O(n)
+
+Thêm m cạnh: O(m)
+
+BFS: O(n + m)
+
+Mỗi đỉnh vào queue tối đa 1 lần → O(n)
+
+Duyệt tất cả cạnh trong danh sách kề → O(m)
+
+Tổng: O(n + m)
+
+Không gian (Space Complexity)
+
+graph chứa danh sách kề: O(n + m)
+
+dist mảng: O(n)
+
+queue tối đa chứa tất cả đỉnh: O(n)
+
+Tổng: O(n + m)
